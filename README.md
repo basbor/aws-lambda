@@ -43,7 +43,7 @@ O primeiro passo é criar uma base de dados RDS.
 
 5. Selecione a instância RDS criada e capture o Endpoint que será utilizado posteriormente.
 
-   > Posteriormente esse valor será mencionado como {RDS_ENDPOINT}.
+   > Posteriormente esse valor será mencionado como **{RDS_ENDPOINT}**.
 
 
 ## Passo 2
