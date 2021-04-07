@@ -208,11 +208,23 @@ Quando a função do Lambda é executada, ela executa a consulta SELECT para a t
 
    `aws lambda invoke --function-name PythonWithRds output.txt`
 
+   Exemplo de output
+   
+   ```
+   {
+    "StatusCode": 200,
+    "ExecutedVersion": "$LATEST"
+   }
+   ```
+
 2. Verifique se a função Lambda foi executada com êxito, da seguinte forma:
 
    - Analise o arquivo output.txt.
    - Analisar os resultados no console do AWS Lambda.
    - Verifique os resultados no CloudWatch Logs.
+   - Consulte a tabela do RDS usando o [My SQL Workbench](https://dev.mysql.com/downloads/workbench/).
+   
+   Exemplo de itens adicionados na tabela *Users* do AWS RDS.
 
 
 ## Passo 8
