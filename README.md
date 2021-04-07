@@ -117,13 +117,13 @@ O código da função AWS Lambda consiste em scripts ou programas compilados e a
 
    > Caso esteja utilizando o MobaXterm e o comando zip não esteja disponível, digite `apt-get install zip` para instalar.
 
+   > Referência [https://docs.aws.amazon.com/pt_br/lambda/latest/dg/python-package-create.html](https://docs.aws.amazon.com/pt_br/lambda/latest/dg/python-package-create.html)
+
    ```
    zip -r rds.zip pymysql/
    zip rds.zip rds.py
    zip rds.zip rds_config.py
    ```
-
-   > Referência [https://docs.aws.amazon.com/pt_br/lambda/latest/dg/python-package-create.html](https://docs.aws.amazon.com/pt_br/lambda/latest/dg/python-package-create.html)
 
 
 ## Passo 5
