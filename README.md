@@ -49,7 +49,8 @@ O código da função do AWS Lambda consiste em scripts ou programas compilados 
 
 Criar o arquivo .zip que o Lambda usará como seu pacote de implantação.
 
-> Para facilitar a execução desse passo sugerimos um terminal com shell Linux, como por exemplo o [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html).
+> Para facilitar a execução sugerimos um terminal Linux.
+> Opção: [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html).
 
 1. Abra um prompt de comando e crie um diretório de projeto do **`rds`**.
 
