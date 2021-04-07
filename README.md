@@ -65,8 +65,7 @@ Libere o Security Group para permitir conexões TCP na porta 3306.
 
 Realizar o acesso programático com sua conta AWS via AWS CLI.
 
-> Referência
-  - [https://aws.amazon.com/pt/cli/](https://aws.amazon.com/pt/cli/)
+> Referência [https://aws.amazon.com/pt/cli/](https://aws.amazon.com/pt/cli/)
 
 > O *Access Key Id* e o *Secret Key* podem ser gerados em [https://console.aws.amazon.com/iam/home#security_credential](https://console.aws.amazon.com/iam/home#security_credential)
 
@@ -122,8 +121,7 @@ O código da função AWS Lambda consiste em scripts ou programas compilados e a
    zip rds.zip rds_config.py
    ```
 
-   > Referência
-     - [https://docs.aws.amazon.com/pt_br/lambda/latest/dg/python-package-create.html](https://docs.aws.amazon.com/pt_br/lambda/latest/dg/python-package-create.html)
+   > Referência [https://docs.aws.amazon.com/pt_br/lambda/latest/dg/python-package-create.html](https://docs.aws.amazon.com/pt_br/lambda/latest/dg/python-package-create.html)
 
 
 ## Passo 5
