@@ -48,7 +48,11 @@ O primeiro passo é criar uma base de dados RDS.
 
 ## Passo 2
 
-Libere o Security Group para permitir conexões TCP na porta 3306.
+Liberar o Security Group para permitir conexões TCP na porta 3306.
+
+Essa conexão poderá ser utilizada para verificar os dados na base AWS RDS.
+
+Posteriormente utilizaremos o [MySQL Workbench](https://dev.mysql.com/downloads/workbench/) para validar.
 
 1. Em **Serviços** selecione **VPC**.
 
