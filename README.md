@@ -63,6 +63,18 @@ Libere o Security Group para permitir conexões TCP na porta 3306.
 
 ## Passo 3
 
+Realizar o acesso programático com sua conta AWS via AWS CLI.
+
+> Referência
+  - [https://aws.amazon.com/pt/cli/](https://aws.amazon.com/pt/cli/)
+
+> O *Access Key Id* e o *Secret Key* podem ser gerados em [https://console.aws.amazon.com/iam/home#security_credential] (https://console.aws.amazon.com/iam/home#security_credential)
+
+Abra o prompt de comando digite `aws configure` e informe os parâmetros solicitados da sua conta.
+
+
+## Passo 4
+
 Criar pacote de implantação.
 
 O código da função AWS Lambda consiste em scripts ou programas compilados e as dependências deles.
@@ -100,9 +112,9 @@ O código da função AWS Lambda consiste em scripts ou programas compilados e a
    | rds\   
    ```
 
-4. Adicione todos os arquivos do diretório `rds` ao arquivo `rds.zip`.
+4. Adicione o conteúdo do diretório `rds` no arquivo `rds.zip`.
 
-   > Caso esteja utilizando o MobaXterm e o comando zip não esteja disponível, digite `apt-get install zip`.
+   > Caso esteja utilizando o MobaXterm e o comando zip não esteja disponível, digite `apt-get install zip` para instalar.
 
    ```
    zip -r rds.zip pymysql/
@@ -113,7 +125,8 @@ O código da função AWS Lambda consiste em scripts ou programas compilados e a
    > Referência
      - [https://docs.aws.amazon.com/pt_br/lambda/latest/dg/python-package-create.html](https://docs.aws.amazon.com/pt_br/lambda/latest/dg/python-package-create.html)
 
-## Passo 4
+
+## Passo 5
 
 Crie a função de execução que dá à sua função permissão para acessar recursos do AWS.
 
@@ -127,7 +140,8 @@ Crie a função de execução que dá à sua função permissão para acessar re
    - Permissões: `AWSLambdaVPCAccessExecutionRole`
    - Nome da função: `lambda-vpc-role`
 
-## Passo 5
+
+## Passo 6
 
 Crie a função AWS Lambda com o comando `create-function`.
 
@@ -183,7 +197,8 @@ aws lambda create-function --function-name  PythonWithRds --runtime python3.8 --
 }
 ```
 
-## Passo 6
+
+## Passo 7
 
 Nesta etapa você invoca a função do Lambda manualmente usando o comando `invoke`.
 
@@ -199,7 +214,8 @@ Quando a função do Lambda é executada, ela executa a consulta SELECT para a t
    - Analisar os resultados no console do AWS Lambda.
    - Verifique os resultados no CloudWatch Logs.
 
-## Passo 7
+
+## Passo 8
 
 A menos que você queira manter os recursos criados neste tutorial, você poderá excluí-los agora.
 
