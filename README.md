@@ -1,4 +1,4 @@
-# AWS Lambda Python com #
+# AWS Lambda Python com AWS RDS #
 
 Demonstrar como criar rápido uma função AWS lambda em Python que realiza interações com uma base de dados AWS RDS.
 
