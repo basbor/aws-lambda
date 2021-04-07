@@ -72,15 +72,17 @@ O código da função AWS Lambda consiste em scripts ou programas compilados e a
 
 1. Abra um prompt de comando, crie o diretório `rds` e navegue até ele.
 
-   > **$** `mkdir rds`
-   > **$** `cd rds`
+   ```
+   mkdir rds
+   cd rds
+   ```
 
 2. Copie o conteúdo dos arquivo Python [rds.py](https://github.com/kledsonhugo/aws-lambda-python-with-rds/blob/main/rds.py) e [rds_config.py](https://github.com/kledsonhugo/aws-lambda-python-with-rds/blob/main/rds_config.py) do GitHub e salve-o no diretório `rds`. A estrutura do seu diretório deve ficar assim:
 
    > Substitua o conteúdo do arquivo `rds_config.py` com as variáveis `{RDS_ENDPOINT}`, `{RDS_MASTER_PASSWORD}` e `{DB_NAME}` capturadas nos passos anteriores.
 
    ```
-   rds $ ls
+   ls
    | rds.py
    | rds_config.py
    ```
@@ -90,10 +92,9 @@ O código da função AWS Lambda consiste em scripts ou programas compilados e a
    > Verifique o conteúdo da variável {PATH_OF_PYTHON_LIBRARIES} e substitua no comando `cp`.
 
    ```
-   rds $ python -m pip install PyMySQL
-   Requirement already satisfied: PyMySQL in {PATH_OF_PYTHON_LIBRARIES} (1.0.2)
-   rds $ cp -aR {PATH_OF_PYTHON_LIBRARIES} .
-   rds $ ls
+   python -m pip install PyMySQL
+   cp -aR {PATH_OF_PYTHON_LIBRARIES} .
+   ls
    | rds.py
    | rds_config.py
    | rds\   
@@ -104,9 +105,9 @@ O código da função AWS Lambda consiste em scripts ou programas compilados e a
    > Caso esteja utilizando o MobaXterm e o comando zip não esteja disponível, digite `apt-get install zip`.
 
    ```
-   $ zip -r rds.zip pymysql/
-   $ zip rds.zip rds.py
-   $ zip rds.zip rds_config.py
+   zip -r rds.zip pymysql/
+   zip rds.zip rds.py
+   zip rds.zip rds_config.py
    ```
 
    > Referência
@@ -134,7 +135,7 @@ Crie a função AWS Lambda com o comando `create-function`.
 > Você encontra os ID´s das Subnets e o ID do Security Group da VPC padrão nas configurações da instância RDS.
 
 ```
-rds $ aws lambda create-function --function-name  PythonWithRds --runtime python3.8 \
+aws lambda create-function --function-name  PythonWithRds --runtime python3.8 \
 --zip-file fileb://rds.zip --handler rds.handler \
 --role arn:aws:iam::{ACCOUNT_ID}:role/lambda-vpc-role \
 --vpc-config SubnetIds={SUBNET_ID_1},{SUBNET_ID_2},{SUBNET_ID_N},SecurityGroupIds={SECURITY_GROUP_NAME}
