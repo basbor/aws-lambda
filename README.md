@@ -1,6 +1,6 @@
 # AWS Lambda Python com #
 
-Demonstrar como criar rápido uma função lambda em Python que realiza interações com uma base de dados RDS.
+Demonstrar como criar rápido uma função AWS lambda em Python que realiza interações com uma base de dados AWS RDS.
 
 > As opções utilizadas consideram ambiente exclusivamente para experimentação.
 > Ambientes corporativos produtivos devem levar em consideração outros aspectos não contemplados, como segurança, capacidade, alta disponibilidade e observability.
@@ -43,7 +43,7 @@ O primeiro passo é criar uma base de dados RDS.
 
 ## Passo 2
 
-Criar o pacote de implantação.
+Criar pacote de implantação.
 
 O código da função do AWS Lambda consiste em scripts ou programas compilados e as dependências deles. Use um pacote de implantação para implantar seu código de função no Lambda.
 
