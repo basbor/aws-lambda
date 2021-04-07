@@ -225,6 +225,8 @@ Quando a função do Lambda é executada, ela executa a consulta SELECT para a t
    - Consulte a tabela do RDS usando o [My SQL Workbench](https://dev.mysql.com/downloads/workbench/).
    
    Exemplo de itens adicionados na tabela *Users* do AWS RDS.
+   
+   ![conteúdo RDS Users Table](/images/rds.PNG)   
 
 
 ## Passo 8
