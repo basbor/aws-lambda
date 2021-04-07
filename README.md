@@ -68,7 +68,7 @@ Realizar o acesso programático com sua conta AWS via AWS CLI.
 > Referência
   - [https://aws.amazon.com/pt/cli/](https://aws.amazon.com/pt/cli/)
 
-> O *Access Key Id* e o *Secret Key* podem ser gerados em [https://console.aws.amazon.com/iam/home#security_credential] (https://console.aws.amazon.com/iam/home#security_credential)
+> O *Access Key Id* e o *Secret Key* podem ser gerados em [https://console.aws.amazon.com/iam/home#security_credential](https://console.aws.amazon.com/iam/home#security_credential)
 
 Abra o prompt de comando digite `aws configure` e informe os parâmetros solicitados da sua conta.
 
