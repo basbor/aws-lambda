@@ -2,9 +2,8 @@
 
 Demonstrar como criar rápido uma função lambda em Python que realiza interações com uma base de dados RDS.
 
-> As opções utilizadas neste exemplo consideram ambiente exclusivamente para experimentação.
-> Ambientes corporativos produtivos devem levar em consideração outros aspectos não contemplados nessa atividade.
-> Como por exemplo segurança, capacidade, alta disponibilidade e observability.
+> As opções utilizadas consideram ambiente exclusivamente para experimentação.
+> Ambientes corporativos produtivos devem levar em consideração outros aspectos não contemplados, como segurança, capacidade, alta disponibilidade e observability.
 
 > Referências
 - [https://docs.aws.amazon.com/pt_br/lambda/latest/dg/services-rds-tutorial.html](https://docs.aws.amazon.com/pt_br/lambda/latest/dg/services-rds-tutorial.html)
