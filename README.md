@@ -88,7 +88,7 @@ O código da função AWS Lambda consiste em scripts ou programas compilados e a
    cd rds
    ```
 
-2. Copie o conteúdo dos arquivo Python [rds.py](https://github.com/kledsonhugo/aws-lambda-python-with-rds/blob/main/rds.py) e [rds_config.py](https://github.com/kledsonhugo/aws-lambda-python-with-rds/blob/main/rds_config.py) do GitHub e salve-o no diretório `rds`. A estrutura do seu diretório deve ficar assim:
+2. Copie o conteúdo dos arquivos Python [rds.py](https://github.com/kledsonhugo/aws-lambda-python-with-rds/blob/main/rds.py) e [rds_config.py](https://github.com/kledsonhugo/aws-lambda-python-with-rds/blob/main/rds_config.py) do GitHub e salve-o no diretório `rds`. A estrutura do seu diretório deve ficar assim:
 
    > Substitua o conteúdo do arquivo `rds_config.py` com as variáveis `{RDS_ENDPOINT}`, `{RDS_MASTER_PASSWORD}` e `{DB_NAME}` capturadas nos passos anteriores.
 
