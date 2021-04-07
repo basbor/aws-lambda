@@ -206,7 +206,7 @@ Quando a função do Lambda é executada, ela executa a consulta SELECT para a t
 
 1. Invoque a função do Lambda com o comando invoke.
 
-   `rds $ aws lambda invoke --function-name PythonWithRds output.txt`
+   `aws lambda invoke --function-name PythonWithRds output.txt`
 
 2. Verifique se a função Lambda foi executada com êxito, da seguinte forma:
 
