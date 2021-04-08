@@ -232,7 +232,7 @@ Quando a função do Lambda é executada, ela executa a consulta SELECT para a t
    
    Exemplo de itens adicionados na tabela *Users* do AWS RDS.
    
-   ![conteúdo RDS Users Table](/images/rds.PNG)   
+   ![conteúdo RDS Users Table](/images/rds.PNG)
 
 
 ## Passo 8
