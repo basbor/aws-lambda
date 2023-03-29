@@ -263,3 +263,4 @@ Excluindo os recursos da AWS que você não está mais usando, você evita cobra
    - Desmarque a caixa de seleção **Create final snapshot (Criar snapshot final)**.
    - Digite `delete me` na caixa de texto.
    - Escolha **Delete (Excluir)**.
+ 
