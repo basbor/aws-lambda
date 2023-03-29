@@ -15,3 +15,5 @@ jobs:
     - name: Step 01 - echo "Hello World"
       run : |
         echo Hello World !!!
+        brabus
+        cmd teste 123
