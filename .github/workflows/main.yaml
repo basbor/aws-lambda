@@ -15,3 +15,4 @@ jobs:
     - name: Step 01 - echo "Hello World"
       run : |
         echo Hello World !!!
+        lalala
