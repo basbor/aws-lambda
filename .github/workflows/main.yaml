@@ -15,4 +15,5 @@ jobs:
     - name: Step 01 - echo "Hello World"
       run : |
         echo Hello World !!!
+        sleep 30
         lalala
